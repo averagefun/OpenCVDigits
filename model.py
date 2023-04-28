@@ -14,7 +14,6 @@ mask = np.concatenate((mask_1[0], mask_2[0], mask_3[0]))
 x_train = x_train[mask]
 y_train = y_train[mask]
 
-
 # Нормализация данных изображений
 x_train = x_train.astype("float32") / 255
 x_test = x_test.astype("float32") / 255
